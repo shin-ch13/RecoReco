@@ -1,0 +1,94 @@
+<ons-page>
+  <ons-tabbar position="top">
+    <ons-tabbar-item onclick=myNavigator.pushPage('home.html') icon="rotate-left" style="background-color: #91dbdb;"></ons-tabbar-item>
+    <ons-tabbar-item page="recordroom.html" label="作成" active="true"></ons-tabbar-item>
+    <!-- onclick=recordserch_test(); -->
+    <ons-tabbar-item page="JoinNavigator.html" label="参加">
+    </ons-tabbar-item>
+  </ons-tabbar>
+ 
+ <!--記録作成画面-->
+  <ons-template id="recordroom.html" >
+  <div style="padding-top: 100px; color: #999; margin-top: 10%; text-align: center">
+    <div class="recordroom">
+
+  <form method="POST" action="#" name="form2">
+    <ul>
+        <li class="recordname">
+            <label for="recordname">記録名：</label>
+            <input type="text" class="text-input" id="recordname" placeholder="記号は使用できません" style=" width: 57%">
+        </li>
+        <li class="password">
+            <label for="password" class="password">パスワード：</label>
+            <input type="password" class="text-input" id="password" placeholder="半角英数字4~16文字で入力してください" style=" width: 57%">
+        </li>
+    </ul>
+  </form>
+
+    <div class="roommake">
+        <ons-button modifer="small" onclick="roommakeCheck();">作成</ons-button>
+    </div>
+
+  </div> 
+  <img src="image/recoreco.jpg" width="100%">
+  </div>  
+
+  
+  <!--記録検索画面-->
+  <ons-template id="join1.html">
+   <p style="padding-top: 100px; color: #999; text-align: center">
+   <div class="join">
+        <ul> 
+            <li class="recordname_join">
+            <form name="search_room" action="#">
+                <label for="recordname_join">記録名：</label>
+                <input id="name" type="text" class="text-input" ng-model="recordname_join" placeholder="Type here" style=" width: 40%">
+            </form>  
+            </li>    
+            
+            <li class="hostid">
+                <label for="hostid">ホストID：</label>
+                <input type="text" class="text-input" ng-model="hostid" placeholder="Type here" style=" width: 40%">
+                <input type="image" src="image/search.png" alt="検索" name="searchBtn2" id="searchBtn2" onclick="recordsearch_test();"> 
+                <!--  roomjoinCheck() -->
+                
+            </li>
+        </ul>
+
+    <div id="top_recordList">
+        
+    </div>
+    
+    </div>  
+    <img src="image/recoreco.jpg" width="100%">
+
+    <!--4.1.8.html-->
+  <ons-template id="join2.html">
+    <div style="padding-top: 10%; color: #999; margin-top:25%; text-align: center">  
+    <div class="whitebox"> 
+     <section style="padding: 30% 10px 30% 10px; background-color: #fff">
+     <div id="Roomname" style="text-align: center; font-size:20px;"></div>
+     <br />
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;パスワード :
+      <form name="form_pass" action="#">
+        <input type="text" class="text-input" id="roomPW" placeholder="半角英数字4~16文字で入力してください" style="width: 50%">  
+      </form>
+      
+     </section>
+     
+    
+     <div style="padding:  0px 0px 20% 0px; background-color: #fff;" >
+      <ons-button modifier="small" onclick="passsearch_test();">参加</ons-button>
+     </div>
+    </div>
+    </div>
+     <img src="recoreco.jpg" width="100%"  style="margin: 2% 0px 0px 0px;">
+    </div>        
+    
+  </ons-template>
+  
+</ons-page>
+
+
+
+

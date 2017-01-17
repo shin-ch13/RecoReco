@@ -1,0 +1,54 @@
+<ons-page>
+    <ons-button onclick=myNavigator.resetToPage("home.html") style="background-color:white; margin: 20px 0 0 20px; border-radius:30px"><ons-icon icon="rotate-left" style="color:gray; margin:10px;"></ons-icon></ons-button>
+    <div style="float:right; width:65%; height:15%; text-aline:center; line-height:200%; font-size:30px">記録履歴一覧</div>
+    
+    <p style=" color: #999; text-align: center"></p>
+    <div class="hist">
+
+        <form class="search-hist" method="POST" action="#" name="search-hist">
+            <ul>
+                <li class="search-hist">
+                    <label for="search-hist">記録名：</label>
+                    <input type="text" class="text-input" id="search-hist" style=" width: 40%">
+                    <input type="image" src="image/search.png" alt="検索" name="histBtn2" id="searchHistBtn" onclick="roomjoinCheck();">
+                </li>
+            </ul>
+        </form>
+
+    
+        <div id="top_histList">
+        <!-- <input type=button id="test" onclick="push(this)" value="AAA"> -->
+        <!--
+            <ons-list id="histList">
+                <ons-list-item ng-show="ctrl.records.length" ng-repeat="record in ctrl.records"></ons-list-item>
+                <ons-list-item ng-show="!ctrl.records.length" modifier="tappable" onclick=myNavigator.pushPage('kirokueturan.html')></ons-list-item>
+                <ons-list-item ng-show="!ctrl.records.length">XXXX</ons-list-item>
+                <ons-list-item ng-show="!ctrl.records.length">XXXXX</ons-list-item>
+                <ons-list-item ng-show="!ctrl.records.length">XXXXX</ons-list-item>
+                <ons-list-item ng-show="!ctrl.records.length">XXXX</ons-list-item>
+                <ons-list-item ng-show="!ctrl.records.length">XXXXXX</ons-list-item>
+                <ons-list-item ng-show="!ctrl.records.length">XXXXX</ons-list-item>
+                <ons-list-item ng-show="!ctrl.records.length">XXXXX</ons-list-item>
+                <ons-list-item ng-show="!ctrl.records.length">XXXXXX</ons-list-item>
+                <ons-list-item ng-show="!ctrl.records.length">XXXX</ons-list-item>
+                <ons-list-item ng-show="!ctrl.records.length">XXXXX</ons-list-item>
+                <ons-list-item ng-show="!ctrl.records.length">XXXXX</ons-list-item>
+                <ons-list-item ng-show="!ctrl.records.length">XXXX</ons-list-item>
+                <ons-list-item ng-show="!ctrl.records.length">XXXXXX</ons-list-item>
+                <ons-list-item ng-show="!ctrl.records.length">XXXXX</ons-list-item>
+                <ons-list-item ng-show="!ctrl.records.length">XXXXX</ons-list-item>
+                <ons-list-item ng-show="!ctrl.records.length">XXXXXX</ons-list-item>
+                <ons-list-item ng-show="!ctrl.records.length">XXXX</ons-list-item>
+                <ons-list-item ng-show="!ctrl.records.length">XXXXX</ons-list-item>
+                <ons-list-item ng-show="!ctrl.records.length">XXXXX</ons-list-item>
+                <ons-list-item ng-show="!ctrl.records.length">XXXX</ons-list-item>
+                <ons-list-item ng-show="!ctrl.records.length">XXXXXX</ons-list-item>
+                <ons-list-item ng-show="!ctrl.records.length">XXXXX</ons-list-item>
+                <ons-list-item ng-show="!ctrl.records.length">XXXXX</ons-list-item>
+                -->
+            </ons-list>
+        </div>
+
+    </div>  
+    <img src="image/recoreco.jpg" width="100%">
+</ons-page>

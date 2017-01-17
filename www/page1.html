@@ -1,0 +1,145 @@
+<ons-page>
+    <ons-tabbar position="top">
+        <ons-tabbar-item onclick=myNavigator.pushPage('start.html') icon="rotate-left" style="background-color: #91dbdb;"></ons-tabbar-item>
+        <ons-tabbar-item page="NewNavigator.html" label="新規登録" ></ons-tabbar-item>
+        <ons-tabbar-item page="login.html" label="ログイン"  active="true"></ons-tabbar-item>
+    </ons-tabbar>
+
+  <!--起動画面-->
+    <ons-template id="str.html" >
+
+        <section  style="padding-top: 130px; color: #999; text-align: center;">
+            <div>
+                <img src="image/recoreco.jpg" width="100%" height="100%">
+            </div>
+            <br><br><br><br>
+            <ons-button  onclick="myNavigator.pushPage('home.html')">メニュー画面</ons-button>
+            <br><br>
+            <ons-button  onclick="myNavigator.pushPage('new2.html')">上岡</ons-button>
+        </section>
+
+    </ons-template>
+
+
+  <!--ユーザ新規登録画面1-->
+    <ons-template id="new1.html">
+        <div style="text-align: center; margin-top: 8%">
+            <div class="registroom">
+
+                <form method="POST" action="#" name="form1">
+                    <ul>
+                        <li class="userID">
+                            <label for="userID">ユーザID :</label>
+                            <input type="text" class="text-input" id="userID" placeholder="Type here" style="width: 50%">
+                        </li>
+
+                        <li class="userPW">
+                            <label for="userPW">パスワード :</label>
+                            <input type="password" class="text-input" id="userPW" placeholder="Type here" style="width: 50%">
+                        </li>
+
+                        <li class="check_userPW">
+                            <label for="check_userPW" style="text-align: center;">パスワード<br />(確認): </label>
+                            <input type="password" class="text-input" id="check_userPW" placeholder="Type here" style="width: 50%">
+                            <!-- <p id="test" style="font-size: 10px"><br /></p> -->
+                        </li>
+
+                        <li class="userNickName">
+                            <label for="userNickName">ユーザ名:</label>
+                            <input type="text" class="text-input" id="userNickName" placeholder="Type here" style="width: 50%">
+                        </li>
+                    </ul>
+
+                    <input type="button" class="icon" onclick="snapPicture()" value="写真を撮影" style="margin-top: 5%;"><br><br>
+                    <input type="button" class="icon" onclick="getPhoto();" value="端末から写真を選択"><br>
+                    <br>
+                    <img id="picture" src="" width="30%" height="30%" >
+                    <!-- 
+                    style="text-align: center; border-top-left-radius: 50%;border-top-right-radius: 50%;border-bottom-right-radius: 50%;border-bottom-left-radius: 50%;
+                    -->
+                    <div class="picture">
+                        <ons-button modifier="large" onclick="newregistCheck();">次へ</ons-button>
+                    </div>
+                </form>
+            </div>
+
+        <img src="image/recoreco.jpg" width="100%">
+        </div>
+    </ons-template>
+
+<!--ユーザ新規登録画面2 -->
+    <ons-template id="new2.html">
+
+        <p style="padding-top: 100px; color: #999; text-align: center">
+            <div class="whitebox">
+                <div class="description">
+                    以下の例文を読んでください
+                </div>
+
+                <div class="ex-text">
+                    本文本文本文本文本文本文<br />
+                    本文本文本文本文本文<br/>
+                    本文本文本文本文本文本文本文<br />
+                    本文本文本文<br/>
+                    本文本文本文本文<br/>
+                </div>
+
+                <br />
+                <!--
+                <ons-button modifier="light" onclick="captureAudio();">
+                    <ons-icon icon="fa-microphone"></ons-icon>
+                </ons-button> <br>
+                <br>
+                <audio src="" id="myAudio" controls></audio>
+                
+
+                <div id="infoTimer" class="w3-container w3-section w3-border-green w3-border w3-small"></div>
+                -->
+                
+                <input id="sampRec" type="image" value="サンプル開始" onclick="ctrlSampleRecognition()" src="image/play.png" style="border-style:none;">
+                
+                <br />
+                <div id="recording-list" class="w3-section w3-border-green w3-border margin-5 w3-small" style="word-break: break-all;">
+                    ...Recordings will show up here...
+                </div>
+
+                <ons-button class="regist" onclick=myNavigator.pushPage('home.html');>登録</ons-button>
+            </div>
+        </p>
+        <img src="image/recoreco.jpg" width="100%">
+    </ons-template>
+
+
+    <!--ログイン画面-->
+    <ons-template id="login.html">
+        <div style="text-align: center;">
+
+            <div class="loginroom">
+                
+                <div class="blank"></div>
+                
+                <form method="POST" action="#" name="form1">
+                    <ul>
+                        <li class="userID">
+                            <label for="userID">ユーザID :</label>
+                            <input type="text" class="text-input" id="userID" placeholder="Type here" style="width: 50%">
+                        </li>
+
+                        <li class="userPW">
+                            <label for="userPW">パスワード :</label>
+                            <input type="password" class="text-input" id="userPW" placeholder="Type here" style="width: 50%">
+                        </li>
+                    </ul>
+                </form>
+
+                <div class="login_button">
+                    <ons-button modifier="large" onclick="loginCheck();">ログイン</ons-button>
+                </div>
+            </div>
+
+            <img src="image/recoreco.jpg" width="100%">
+        </div>
+    </ons-template>
+
+</ons-page>
+

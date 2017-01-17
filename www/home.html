@@ -1,0 +1,32 @@
+<!--メニュー画面-->
+<ons-page>
+  <head>
+    <script type="js/app.js">
+    if(ticket=0){
+    document.write("0");
+    else
+    {
+        document.write("+ticket+");
+    }
+    </script>
+    
+    <script>
+        //
+        // TODO: Write JavaScript code here
+        //
+    </script>
+   </head>
+    <body bgcolor="#91DBDB">
+    <ons-button modifier="large--quiet" onclick="logoutCheck();" class="right1">ログアウト</ons-button>
+    <img src="image/recoreco.jpg" alt="写真" class="recoreco">
+    <p style="text-align: center;">
+    <input class="mvbtn" type=button value="履歴" onclick=recordname_test();>
+    <!--<input class="mvbtn" type=button value="履歴" onclick=myNavigator.pushPage('histry.html')>-->
+    <input class="mvbtn" type=button value="記録" onclick=myNavigator.pushPage('recordmake.html')>
+    <input class="mvbtn" type=button value="設定" onclick="alert('設定画面へ移動します')">
+    </p>
+    <br><br><br>
+    <p class="right2">チケット:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;枚&nbsp;&nbsp;
+    <input class="plusbtn" type="button" value="+" onclick="alert('チケット購入画面へ移動します')">
+    </p>
+</ons-page>

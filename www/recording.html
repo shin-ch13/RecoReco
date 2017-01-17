@@ -1,0 +1,48 @@
+<ons-modal var="modal">
+  <ons-icon icon="ion-load-c" spin="true"></ons-icon>
+  <br>
+  <br> Please wait.
+</ons-modal>
+
+<ons-page id="page1">
+   <a href="#" onclick="disp(); "><p style="position:absolute;  left:5%;">
+    <img src="image/modoru.jpg" width="40%" ></a>
+    <p id="name_inroom" style="margin: 10px 0px 0px 100px"><span id="name_inroom"></span></p>
+    <span style="margin: 10px 0px 0px 100px; font-size: 12px;">参加者: </span>
+    <span id="nickname_inroom" style="font-size:12px;"></span>
+    
+    <p style=" color: #999; text-align: center"></p>
+    <div class="hist">
+        <!-- <ons-button onClick="ctrlRecognition();" id="btn2">開始</ons-button> -->
+        <!--  <input id="btn2" type="button" value="開始" onclick="ctrlRecognition(this);">-->
+        <!--<input id="btn2" type="button" value="会話記録送信" onclick="send_text();">-->
+        <!--  <i class="zmdi zmdi-pause-circle zmdi-hc-5x" style="color:LightCoral"></i>-->
+        <figure id="chatLogs">
+        
+        <a href="#" onclick="ctrlRecognition(this);"><figcaption id="recbtn" class="zmdi zmdi-play-circle zmdi-hc-5x" style="padding: 0%; color:LimeGreen; opacity: 0.5; position:absolute;  bottom:20%; right:5%;"></figcaption></a>
+
+        </figure>　<!-- この中に書き起こされる -->
+        
+
+    </div> 
+
+    <!--
+    <a href="#" onClick="disp1(); return false;"> <p style="position:absolute; top:390px; left:245px;">
+    <img src="image/record.jpg" width="40px" height="40px"> 
+    </p></a>
+    -->
+    <div id="audios-container"></div>    
+    
+    <div id="infoTimer" class="w3-container w3-section w3-border-green w3-border w3-small"></div>
+
+    <!--
+    <input id="startCapture" onclick="startCapture()" type="button" class="w3-btn w3-green margin-5" value="Start">
+    <input id="stopCapture" onclick="id=setInterval(stopCapture(),500,id)" type="button" class="w3-btn w3-red margin-5" value="Stop & Save">
+    <br />
+    <div id="recording-list" class="w3-section w3-border-green w3-border margin-5 w3-small"
+        style="word-break: break-all;">...Recordings will show up here...
+    </div>
+    -->
+    <img src="image/recoreco.jpg" width="100%">
+
+</ons-page>

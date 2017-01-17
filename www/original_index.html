@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!--ステータスバー調整-->
+    <script>
+//    function onDeviceReady() {
+//        if ( window.device.platform === 'iOS' && parseFloat(window.device.version) >= 7.0 ) {
+//            document.body.style.marginTop = "20px";
+//        }
+//    }
+//    document.addEventListener('deviceready', onDeviceReady, false);
+　　</script>
+　　
+　　
+　　<script src="https://cdn.WebRTC-Experiment.com/MediaStreamRecorder.js"></script>
+
+    <!-- for Edige/FF/Chrome/Opera/etc. getUserMedia support -->
+    <script src="https://cdn.WebRTC-Experiment.com/gumadapter.js"></script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+　　
+　　
+     <!-- JavaScript SDKの読み込みを設定 -->
+    <script src="js/ncmb.min.js"></script>
+    <script>
+    ons.bootstrap();
+    ons.disableAutoStatusBarFill();
+    </script>
+    
+    <!-- JavaScriptの読み込みを設定 -->
+    <script src="js/app.js"></script>
+    
+    <script src="js/WavAudioEncoder.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/cordova.js"></script>
+    <script src="js/file-demo.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="socket.io.js"></script>
+    
+    
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    
+<!--    <script type="text/javascript" src="js/index.js"></script> -->
+    
+</head>
+<body>
+ <ons-navigator title="Navigator" var="myNavigator" page="start.html">
+</body>
+</html>

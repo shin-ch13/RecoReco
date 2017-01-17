@@ -1,0 +1,28 @@
+<!--4.1.8.html-->
+<ons-page>
+  <ons-tabbar position="top">
+    <ons-tabbar-item page="passin.html" icon="rotate-left" style="background-color: #91dbdb;" active="true"></ons-tabbar-item>
+    <ons-tabbar-item page="Navigator.html" label="作成" ></ons-tabbar-item>
+    <ons-tabbar-item page="login.html" label="参加"  ></ons-tabbar-item>
+  </ons-tabbar> 
+  
+  <ons-template id="passin.html">
+    <p style="padding-top: 100px; color: #999; text-align: center">  
+    <div class="whitebox"> 
+     <section style="padding: 100px 10px 88px 10px; background-color: #fff">
+     <p style="text-align: center; font-size:30px;">【XXX】</p>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;パスワード :
+      <input type="text" class="text-input" id="userPW" placeholder="Type here" style="width: 50%">
+     </section>
+     
+    
+     <section style="padding:  0px 0px 100px 0px; background-color: #fff;" >
+      <ons-button style="background-color: #91dbdb; color: #000000;"modifier="small" onclick=myNavigator.pushPage('recording.html')>参加</ons-button>
+     </section>
+    </div>
+    </p>
+     <img src="recoreco.jpg" width="100%" height="13%" style="margin: 15px 0px 0px 0px;">
+    </p>        
+  </ons-template>
+  
+</ons-page>

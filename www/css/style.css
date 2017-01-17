@@ -1,0 +1,459 @@
+/**/
+/*各ページ背景(デフォルト)*/
+.page__background {
+  background-color: #91dbdb;
+}
+
+/*タブバー(デフォルト)*/
+.tab-bar {
+    background-color: #91dbdb;
+    padding-top: 5%;
+}
+
+/*タブバーのパーツ(デフォルト)*/
+.tab-bar__item {
+    background-color: #FFF;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+}
+
+/*ons-button modifier="large" (デフォルト)*/
+.button--large {
+    background-color: #91dbdb;
+    color: #000;
+}    
+
+/*ユーザ新規登録画面1(new1.html) divタグ*/
+.registroom {
+    margin-top: 5%;
+    background: white;
+    border-style: solid;
+    margin: auto;
+    border-width: 1px;
+    width: 90%;
+    height: 80%;
+}
+
+/*ユーザ新規登録画面1(new1.html) 写真選択 divタグ*/
+#userIcon {
+    text-align: center;
+}
+
+/*ユーザ新規登録画面1(new1.html) 次へボタン divタグ*/
+.picture {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center; 
+    padding: 0px 30% 0px 30%;
+}
+
+
+
+/*ユーザ新規登録画面2(new2.html) divタグ*/
+.whitebox { 
+    background: white; 
+    border-style: solid; 
+    margin: auto; 
+    margin-top: -100px; 
+    border-width: 1px; 
+    width: 90%; 
+    height: 80%;
+    text-align: center;
+} 
+
+/*ユーザ新規登録画面2(new2.html) 以下の例文を読んでください divタグ*/
+.description{ 
+    padding-top: 10%; 
+} 
+
+/*ユーザ新規登録画面2(new2.html) 本文 divタグ*/
+.ex-text{ 
+    padding-top: 10%; 
+    padding-left: 10%; 
+    text-align: left; 
+} 
+
+/*ユーザ新規登録画面2(new2.html) 録音開始ボタン ons-buttonタグ*/
+ons-button.record{ 
+    font-size: 30px; 
+    text-align: center; 
+    vertical-align: middle; 
+    width: 40px; 
+    height: 40px; 
+    border-radius: 20px; 
+    margin-top: 10%; 
+    background-color: #91dbdb;
+    color: #000;
+} 
+
+/*ユーザ新規登録画面2(new2.html) 登録ボタン ons-buttonタグ*/
+ons-button.regist{ 
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center; 
+    padding: 0px 35% 0px 35%;
+}
+
+/*ログイン画面(login.html) divタグ*/
+.loginroom {
+    background: white;
+    border-style: solid;
+    margin: auto;
+    border-width: 1px;
+    width: 90%;
+    height: 80%;
+    margin-top: 8%;
+}
+
+/*ログイン画面(login.html) divタグ*/
+.blank {
+    margin-top: 50%;
+}
+
+/*ログイン画面(login.html) ログイン ons-buttonタグ*/
+.login_button {
+    margin-top: 20%;
+    margin-bottom: 20%;
+    text-align: center; 
+    padding: 0px 30% 0px 30%;
+}
+
+/*メニュー画面(いわも)*/
+img.recoreco{
+    width: 100%;
+    height:16%;
+    padding-top: 100px;
+    padding-bottom: 130px;   
+}
+.right1 {
+    text-align: right;
+    margin: 5px 5px 5px 5px;
+}
+.right2 {
+    text-align: right;
+    margin: 5px 20px 5px 5px;
+}
+.plusbtn{
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #FFFFFF;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+.mvbtn{
+    font-size: large;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 80px;
+    height: 50px;
+    background-color: #FFFFFF;
+    border: 0px;
+    border-radius: 10px;
+}
+
+#fixed {
+    height: 400px;
+    overflow: auto;
+}
+
+
+/*ul liタグ*/
+ul li {
+    list-style: none;
+    margin-top: 5%;
+    margin-right: 30%;
+    width: 90%;
+}
+
+/*記録作成画面(recordroom.html) 記録名 liタグ*/
+ul li.recordname {
+    margin-top: 50%;
+}
+
+/*記録作成画面(recordroom.html) パスワード liタグ*/
+ul li.password {
+    margin-bottom: 60px;
+}
+
+/*ulタグ*/
+ul {
+    margin: 0 auto;
+}
+
+/*labelタグ*/
+label {
+    display: inline-block;
+    width: 35%;
+    font-size: 13px;
+    text-align: right;
+}
+
+/*??????????*/
+section.regist {
+    margin-top: 20px;
+    
+}
+
+/*記録作成画面(recordroom.html) divタグ*/
+.recordroom {
+    background: white;
+    border-style: solid;
+    margin: auto;
+    margin-top: -100px;
+    border-width: 1px;
+    width: 90%;
+    height: 80%;
+}
+
+/*記録作成画面(recordroom.html) 作成ボタン divタグ*/
+.roommake {
+    text-align: center;
+    margin-bottom: 27%;
+}
+
+/*記録検索画面(join.html) divタグ*/
+.join {
+    background: white;
+    border-style: solid;
+    margin: auto;
+    margin-top: -100px;
+    border-width: 1px;
+    width: 90%;
+    height: 80%;
+}
+
+/*記録検索画面(join.html) ホストID liタグ*/
+ul li.hostid {
+    margin-bottom: 10px;
+}
+
+/*記録検索画面(join.html) 記録名一覧表示領域 divタグ*/
+#top_recordList{
+  margin: 0 auto;
+    width: 90%;
+    height: 65%;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    overflow: auto;
+
+}
+
+input:focus {
+    border: 1px solid blue;
+}
+
+#searchBtn2 {  
+    cursor: pointer;
+    width: 30px;
+    float: right;
+}  
+ 
+/*会話記録検索画面(histry.html)*/
+#top_histList{
+    margin: 0 auto;
+    margin-top: 5px;
+    width: 90%;
+    height: 75%;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    overflow: auto;
+    padding: 2%;
+}
+
+/*記録作成画面(histry.html) 記録名 divタグ*/
+.search-hist{
+    text-align: center;
+    margin-top: 3%;
+}
+
+#chatLogs{
+  margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    overflow: auto;
+
+}
+
+.hist {
+    background: white;
+    border-style: solid;
+    margin: auto;
+    margin-top: 10%;
+    border-width: 1px;
+    width: 90%;
+    height:70%;
+    overflow: auto;
+}
+
+
+#searchHistBtn {  
+    cursor: pointer;
+    width: 30px;
+    float: right;
+}  
+
+
+/*ここからコピペ*/
+
+/**
+ * Large Button Component
+ * http://components.onsenui.io/
+ */
+.button--large {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  height: auto;
+  text-decoration: none;
+  padding: 4px 20px;
+  font-size: 16px;
+  line-height: 36px;
+  letter-spacing: 0;
+  color: #fff;
+  text-shadow: 0 1px none;
+  vertical-align: middle;
+  background-color: #1284ff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: background-color 0.2s linear, color 0.2s linear, opacity 0.2s linear;
+  -moz-transition: background-color 0.2s linear, color 0.2s linear, opacity 0.2s linear;
+  -o-transition: background-color 0.2s linear, color 0.2s linear, opacity 0.2s linear;
+  transition: background-color 0.2s linear, color 0.2s linear, opacity 0.2s linear;
+  font-weight: 400;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 36px;
+  padding: 4px 20px;
+  display: block;
+  width: 100%;
+}
+.button--large:active {
+  background-color: #1284ff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #fff;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+  opacity: 0.6;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.button--large:disabled {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+}
+.button--large:hover {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.button--large:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+}
+
+
+
+#area2 {
+    width: 90%;
+    height: 3em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+#btn2 {
+    background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+    color: white;
+    background: skyblue;
+    border: 2px solid #000000;
+    padding: 13px 20px;
+    font-weight: 700;
+    font-size: 15px;
+    border-top-left-radius: 50px; 
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-top: 1%;
+    margin-left: 70%;
+}
+#btn2.select {
+    background: -webkit-linear-gradient(top,#f2739e 30%,#f23f7b 100%);
+    text-shadow: 1px 1px 1px #f1115c;
+    border: 1px solid #f1115c;
+}
+#select2 {
+    width: 200px;
+}
+
+#largetext {
+    font-size: 25px;
+}
+
+#middletext {
+    font-size: 20px;
+}
+
+.redtext {
+    color: red;
+}
+
+#nameView{
+    font-size: 7px;
+}
+
+#messageView{
+    padding-left: 10px;
+}
+
+input.test{
+    width: 100%;
+    height: 10%;
+    font-size: 15px;
+    background: white;
+}
+
+.opacity    {  
+    background: #333;  
+    padding: 10px;  
+    border: 5px solid #000;  
+    color:LightGreen;;  
+    opacity: 0.6;  
+}  
